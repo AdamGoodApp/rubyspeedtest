@@ -19,11 +19,13 @@
 $( document ).ready(function() {
 
   $( "#test-ruby" ).on( "click", function() {
+    alert('1');
     $.ajax({
       method: "GET",
-      url: "http://178.62.4.140/ruby"
+      url: "/ruby"
     })
     .done(function( msg ) {
+      alert('2');
       console.log( msg );
     });
   });
