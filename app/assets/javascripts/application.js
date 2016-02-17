@@ -21,7 +21,7 @@ $( document ).ready(function() {
   $( "#test-ruby" ).on( "click", function() {
     $.ajax({
       method: "GET",
-      url: "/ruby"
+      url: "http://178.62.4.140/ruby"
     })
     .done(function( msg ) {
       console.log( msg );
