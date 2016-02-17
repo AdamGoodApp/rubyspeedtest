@@ -19,13 +19,12 @@
 $( document ).ready(function() {
 
   $( "#test-ruby" ).on( "click", function() {
-    alert('1');
     $.ajax({
       method: "GET",
       url: "/ruby"
     })
     .done(function( msg ) {
-      alert('2');
+      alert(msg['no_primes']);
       console.log( msg );
     });
   });
