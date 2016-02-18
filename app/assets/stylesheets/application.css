@@ -31,3 +31,15 @@ canvas {
   top:0;
   left: 0
 }
+
+#limit-holder {
+  position: absolute;
+  bottom: 10%;
+  margin-left: 50%;
+  left: -102px;
+  width: 204px;
+}
+
+#limit-holder p {
+  display: inline-block;
+}

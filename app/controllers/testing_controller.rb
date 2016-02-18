@@ -10,7 +10,7 @@ class TestingController < ApplicationController
   end
 
   def ruby_prime
-    render json: Beta.calc
+    render json: Beta.calc(params[:number].to_i)
   end
 
   def c_prime

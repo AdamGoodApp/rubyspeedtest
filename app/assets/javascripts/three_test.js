@@ -37,10 +37,11 @@ function onWindowResize() {
   renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
-function apiCall() {
+function apiCall(limit) {
   $.ajax({
     method: "GET",
-    url: "/ruby"
+    url: "/ruby",
+    data: {number: limit}
   })
   .done(function( msg ) {
     console.log( msg );
@@ -52,11 +53,10 @@ function apiCall() {
 
 function animate() {
   requestAnimationFrame( animate );
-
-
-
   renderer.render( scene, camera );
 
-  apiCall();
+  var limit = $('#limit-input').val();
+
+  apiCall(limit);
 }
 

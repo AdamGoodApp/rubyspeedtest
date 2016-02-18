@@ -15,9 +15,9 @@ class Beta
     true
   end
 
-  def self.calc()
+  def self.calc(n)
     beginning = Time.now
-    lim=30000
+    lim=n
     no_primes = 0
 
     i = 0
