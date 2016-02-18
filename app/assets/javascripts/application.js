@@ -24,7 +24,6 @@ $( document ).ready(function() {
       url: "/ruby"
     })
     .done(function( msg ) {
-      alert(msg['no_primes']);
       console.log( msg );
     });
   });

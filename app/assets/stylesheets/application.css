@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+}
+
+#stats {
+  position: absolute;
+  top:0;
+  left: 0
+}

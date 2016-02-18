@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   match 'ruby' => 'testing#ruby_prime', :via => :get, :defaults => { :format => :json }
   match 'cplus' => 'testing#c_prime', :via => :get, :defaults => { :format => :json }
 
+  get 'three' => 'testing#three'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
