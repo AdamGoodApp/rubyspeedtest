@@ -45,14 +45,15 @@ function apiCall() {
   .done(function( msg ) {
     console.log( msg );
         stats.update();
+        mesh.rotation.x += 0.01;
+        mesh.rotation.y += 0.02;
   });
 }
 
 function animate() {
   requestAnimationFrame( animate );
 
-  mesh.rotation.x += 0.01;
-  mesh.rotation.y += 0.02;
+
 
   renderer.render( scene, camera );
 
