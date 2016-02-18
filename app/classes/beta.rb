@@ -17,7 +17,7 @@ class Beta
 
   def self.calc()
     beginning = Time.now
-    lim=3000
+    lim=30000
     no_primes = 0
 
     i = 0
